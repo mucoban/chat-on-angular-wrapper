@@ -7,7 +7,7 @@ window.addEventListener("message", function(event) {
 iframe.onload = function () {
  this.contentWindow.postMessage({ innerWidth: window.innerWidth }, '*');
 }
-iframe.setAttribute('src', 'http://localhost:4200');
+iframe.setAttribute('src', 'https://mucoban.github.io/chat-on-angular');
 iframe.style.position = 'fixed';
 iframe.style.bottom = '0px';
 iframe.style.right = '20px';
