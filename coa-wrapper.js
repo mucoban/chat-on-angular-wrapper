@@ -10,6 +10,10 @@ iframe.onload = function () {
 iframe.setAttribute('src', 'https://mucoban.github.io/chat-on-angular');
 iframe.style.position = 'fixed';
 iframe.style.bottom = '0px';
-iframe.style.right = '20px';
 iframe.style.border = '0';
+if (window.innerWidth < 992) {
+    iframe.style.right = '0px';
+} else {
+    iframe.style.right = '20px';
+}
 document.body.appendChild(iframe);
